@@ -17,7 +17,7 @@ struct CarbInputView: View {
     
     @State private var carbInput: String = ""
     @State private var foodType: String = "" // TODO: Pass This back to Loop for descriptive entries
-    @State private var absorption: String = "3" // TODO: Get Looper's default medium absorption
+    @State private var absorption: String = "2" // TODO: Get Looper's default medium absorption
     @State private var submissionInProgress = false
     @State private var isPresentingConfirm = false
     @State private var pickerConsumedDate = Date()
@@ -179,7 +179,7 @@ struct CarbInputView: View {
                     .accessibilityAddTraits(.isButton)
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .onTapGesture {
-                        absorption = LocalizationUtils.presentableStringFromHoursAmount(3.0)
+                        absorption = LocalizationUtils.presentableStringFromHoursAmount(2.0)
                     }
                     Spacer()
                     
